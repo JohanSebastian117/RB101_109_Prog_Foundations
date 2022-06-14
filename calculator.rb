@@ -10,7 +10,7 @@ def prompt(message)
   puts("=> #{message}")
 end
 
-#odd issue with float numbers below. They are not added correctly 
+#very odd issue with float numbers below. They are not added correctly 
 def valid_number?(num)
   num.to_i.to_s == num ||  num.to_f.to_s == num
 end
