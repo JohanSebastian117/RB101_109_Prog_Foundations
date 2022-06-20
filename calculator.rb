@@ -10,9 +10,9 @@ def prompt(message)
   puts("=> #{message}")
 end
 
-#very odd issue with float numbers below. They are not added correctly 
+# very odd issue with float numbers below. They are not added correctly 
 def valid_number?(num)
-  num.to_i.to_s == num ||  num.to_f.to_s == num
+  num.to_i.to_s == num || num.to_f.to_s == num
 end
 
 
@@ -34,7 +34,7 @@ prompt "Welcome to Calculator! Enter your name:"
 
 name = ''
 loop do
-  name = gets().chomp()
+  name = gets.chomp
 
   if name.empty?()
     prompt "Make sure to use a valid name."
@@ -49,7 +49,7 @@ loop do # main loop
   number1 = ''
   loop do
     prompt "Whats the first number?"
-    number1 = gets().chomp()
+    number1 = gets.chomp
 
     if valid_number?(number1)
       break
@@ -61,7 +61,7 @@ loop do # main loop
   number2 = ''
   loop do
     prompt "Whats the second number?"
-    number2 = gets().chomp()
+    number2 = gets.chomp
 
     if valid_number?(number2)
       break
@@ -82,7 +82,7 @@ MSG
 
   operator = ''
   loop do
-    operator = gets().chomp()
+    operator = gets.chomp
 
     if %w(1 2 3 4).include?(operator)
       break
@@ -107,8 +107,8 @@ MSG
   prompt "The result is #{result}"
 
   prompt "Do you want to perform another operation?(y to calculate again)"
-  answer = gets().chomp()
-  break unless answer.downcase().start_with?('y')
+  answer = gets.chomp
+  break unless answer.downcase.start_with?('y')
 end
 
 prompt("Thanks for using Calculator!")
