@@ -2,3 +2,4 @@
 101 stuff
 
 1 - Calculator
+2 - Loan calculator
