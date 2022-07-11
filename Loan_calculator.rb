@@ -16,6 +16,7 @@ def valid_number?(num)
 end
 
 prompt 'Welcome to the loan calculator! Enter your name:'
+prompt '------------------------------------------------'
 
 name = ''
 loop do
