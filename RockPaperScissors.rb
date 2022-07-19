@@ -5,7 +5,7 @@ def prompt(message)
 end
 
 def test_method
-	prompt("=> testing")
+	prompt("=> testing 101")
 end
 
 test_method
