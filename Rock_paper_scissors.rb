@@ -1,4 +1,4 @@
-VALID_CHOICES = ['rock', 'paper', 'scissors']
+VALID_CHOICES = %w['rock' 'paper' 'scissors']
 
 def prompt(message)
 	Kernel.puts("=> #{message}")
@@ -43,7 +43,7 @@ loop do
 
 	display_resuls(choice, computer_choice)
 
-	prompt("Do you want to play again?")
+	prompt('Do you want to play again?')
 	answer = Kernel.gets().chomp()
 	break unless answer.downcase().start_with?('y')
 end
