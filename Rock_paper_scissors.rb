@@ -1,20 +1,31 @@
-VALID_CHOICES = %w[rock paper scissors lizard spock]
+VALID_CHOICES = {
+  'r' => 'rock',
+  'p' => 'paper',
+  'sc' => 'scissors',
+  'l' => 'lizard',
+  'sp' => 'spock'
+}
+
+prompt_choices = "
+	r = rock
+	p = paper
+	sc = scissors
+	l = lizard
+	sp = spock"
 
 def prompt(message)
   puts("=> #{message}")
 end
 
 def win?(first, second)
-  (first == 'rock' && second == 'scissors') ||
-    (first == 'paper' && second == 'rock') ||
-    (first == 'scissors' && second == 'paper') ||
-    (first == 'lizard' && second == 'spock') ||
-    (first == 'spock' && second == 'scissors') ||
-    (first == 'scissors' && second == 'lizard') ||
-    (first == 'lizard' && second == 'paper') ||
-    (first == 'spock' && second == 'rock') ||
-    (first == 'rock' && second == 'lizard') ||
-    (first == 'paper' && second == 'spock')
+  win_conditions = {
+    'r' => ['scissors', 'lizard'],
+    'p' => ['rock', 'spock'],
+    'sc' => ['paper', 'lizard'],
+    'sp' => ['scissors', 'rock'],
+    'l' => ['paper', 'spock']
+  }
+  win_conditions[first].include?(VALID_CHOICES[second])
 end
 
 def display_resuls(player, computer)
@@ -26,11 +37,11 @@ def display_resuls(player, computer)
     prompt("It's a tie!")
   end
 end
-
+# Main loop
 loop do
   choice = ''
   loop do
-    prompt("Choose one: #{VALID_CHOICES.join(', ')}")
+    prompt("Choose one: #{prompt_choices}")
     choice = gets.chomp.downcase
 
     if VALID_CHOICES.include?(choice)
@@ -40,9 +51,10 @@ loop do
     end
   end
 
-  computer_choice = VALID_CHOICES.sample
+  computer_choice = VALID_CHOICES.keys.sample
 
-  prompt("You chose: #{choice}, Computer chose: #{computer_choice}")
+  prompt("You chose: #{VALID_CHOICES[choice]}")
+  prompt("Computer chose: #{VALID_CHOICES[computer_choice]}")
 
   display_resuls(choice, computer_choice)
 
