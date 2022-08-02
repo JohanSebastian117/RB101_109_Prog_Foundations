@@ -1,3 +1,11 @@
+# Intro
+def prompt(message)
+  puts("=> #{message}")
+end
+
+prompt("Welcome to Rock Paper Scissors 2.0")
+prompt("best of 3 wins!!!")
+
 VALID_CHOICES = {
   'r' => 'rock',
   'p' => 'paper',
@@ -13,19 +21,14 @@ prompt_choices = "
 	l = lizard
 	sp = spock"
 
-def prompt(message)
-  puts("=> #{message}")
-end
-
 def win?(first, second)
   win_conditions = {
     'r' => ['scissors', 'lizard'],
     'p' => ['rock', 'spock'],
     'sc' => ['paper', 'lizard'],
     'sp' => ['scissors', 'rock'],
-    'l' => ['paper', 'spock']
-  }
-  win_conditions[first].include?(VALID_CHOICES[second])
+    'l' => ['paper', 'spock'] }
+  (win_conditions[first].include?(VALID_CHOICES[second]))
 end
 
 def display_result(player, computer)
@@ -82,7 +85,7 @@ loop do
 
     break if player_total == 3 || computer_total == 3
   end
-	
+
 	display_grand_winner(player_total, computer_total)
 	prompt('Do you want to play again?')
 		answer = gets.chomp
