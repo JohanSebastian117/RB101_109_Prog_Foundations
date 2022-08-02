@@ -28,7 +28,7 @@ def win?(first, second)
   win_conditions[first].include?(VALID_CHOICES[second])
 end
 
-def display_resuls(player, computer)
+def display_results(player, computer)
   if win?(player, computer)
     prompt("You won")
   elsif win?(computer, player)
@@ -56,7 +56,7 @@ loop do
   prompt("You chose: #{VALID_CHOICES[choice]}")
   prompt("Computer chose: #{VALID_CHOICES[computer_choice]}")
 
-  display_resuls(choice, computer_choice)
+  display_results(choice, computer_choice)
 
   prompt('Do you want to play again?')
   answer = gets.chomp
