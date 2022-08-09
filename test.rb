@@ -1,3 +1,4 @@
+=begin
 def prompt(message)
   Kernel.puts("=> #{message}")
 end
@@ -64,3 +65,16 @@ end
 
 prompt("Thank you for using the Mortgage Calculator!")
 prompt("Good bye!")
+=end
+def name
+  "George"
+end
+
+name = "Lisa"
+
+def display_name(name)
+  puts name
+end
+
+display_name(name)
+
