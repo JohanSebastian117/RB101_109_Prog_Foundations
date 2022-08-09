@@ -1,2 +1,2 @@
 # RB101-Programming-Foundations
-101 stuff
+ Basic 101 exercise stored here. 
