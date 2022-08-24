@@ -11,15 +11,14 @@ p reverse_sentence('Reverse these words')
 #Reverse code #2
 
 def reverse_sentence(string)
-	words = []
-
+	strings = []
 	string.split.each do |word|
 		word.reverse! if word.size >=5
-		words << word
+		strings << word
 	end
-
-	words.join(' ')
+	strings.join(' ')
 end
+
 
 
 p reverse_sentence('Reverse this word')
