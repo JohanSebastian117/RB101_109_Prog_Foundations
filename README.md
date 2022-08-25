@@ -1,2 +1,2 @@
 # RB101-Programming-Foundations
- Basic 101 exercise stored here. 
+ LaunchSchool 101 exercise stored here. 
