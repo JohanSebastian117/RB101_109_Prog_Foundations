@@ -1,6 +1,8 @@
 def leap_year?(year)
-	
-	if year % 4 == 0 && year % 100 != 0
+
+	if year <= 1752 && year % 4 == 0
+		puts true
+	elsif year % 4 == 0 && year % 100 != 0
 		puts true
 	elsif year % 400 == 0
 		puts true
