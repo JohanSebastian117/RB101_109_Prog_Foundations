@@ -1,4 +1,4 @@
-=begin
+
 Question 1 --------------------------------------------------------------
 
 ages = { "Herman" => 32, "Lily" => 30, "Grandpa" => 402, "Eddie" => 10 }
@@ -65,5 +65,5 @@ Question 10 --------------------------------------------------------------
 title = "Flintstone Family Members"
 p title.center(40)
 
-=end
+
 
