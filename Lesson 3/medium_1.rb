@@ -23,11 +23,11 @@ def factors(number)
 end
 
 Question 5 --------------------------------------------------------------
-=end
 
-limit = 15
+#limit is outside of the scope 
 
 def fib(first_num, second_num)
+	limit = 15
   while first_num + second_num < limit
     sum = first_num + second_num
     first_num = second_num
@@ -38,3 +38,17 @@ end
 
 result = fib(0, 1)
 puts "result is #{result}" 
+
+
+Question 6 --------------------------------------------------------------
+=end
+
+answer = 42
+
+def mess_with_it(some_number)
+  some_number += 8
+end
+
+new_answer = mess_with_it(answer)
+
+p answer - 8
