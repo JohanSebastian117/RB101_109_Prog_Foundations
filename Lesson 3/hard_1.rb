@@ -1,4 +1,4 @@
-=begin
+
 Question 1 --------------------------------------------------------------
 #greeting will be nil
 if false
@@ -41,7 +41,7 @@ puts "three is: #{three}"
 
 
 Question 4 --------------------------------------------------------------
-=end
+
 
 def dot_separated_ip_address?(input_string)
   dot_separated_words = input_string.split(".")
