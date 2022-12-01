@@ -4,7 +4,7 @@ input:string
 
 output:number
 
-rules:
+Rules:
 			Explicit:
 			- Takes string, returns appropriate number as integer
 			- Do not use traditional methods (string#to_i // integer())
@@ -12,6 +12,14 @@ rules:
 			
 			Implicit:
 			- The string will be a new object
+
+Algorithm:
+			-	Write a hash, key values being integers and their string counterpart
+			- Make a variable [digits] for the numbers and place and build an array from seperated
+				values of the numbers
+			- make an empty "value" to fill with the previous variable
+			- [digits] is iterated and the empty value is filled with:
+				- an iteration in which value equals 10 times the value plus the iteration symbol
 
 =end
 
@@ -22,10 +30,10 @@ NUMBERS = {
 
 
 def string_to_integer(string)
-	digits = string.chars.map {|char| NUMBERS[char]}
+	digits = string.chars.map{|i| NUMBERS[i]}
 	value = 0
-	digits.each{|i| value = 10 * value + i }
-	value
+	digits.each{|i| value = 10 * value + i}
+	value 
 end
 
 
