@@ -62,6 +62,44 @@
 # # => { :a => "ant", :b => "bear", :c => "cat" }
 
 #-------------Enumerable#each_with_object
+#array is initialized to an empty array, []. Inside the block, we can now manipulate array. 
+#In this case, we're just appending the current num into it if it's odd.
+
+# [1, 2, 3].each_with_object([]) do |num, array|
+#   array << num if num.odd?
+# end
+# # => [1, 3]
+
+# on a hash
 
 
-trying this again 
+# { a: "ant", b: "bear", c: "cat" }.each_with_object([]) do |pair, array|
+#   array << pair.last
+# end
+# # => ["ant", "bear", "cat"]
+
+
+
+#-------------Enumerable#first
+# Takes an optional argument which represents the number of elements to return
+# When no argument is given, it returns only the first element in the collection.
+
+
+# [1, 2, 3].first
+# # => 1
+
+# on a hash
+
+
+# { a: "ant", b: "bear", c: "cat" }.first(2)
+# => [[:a, "ant"], [:b, "bear"]]
+#first 2 elements returned
+
+
+#-------------Enumerable#include?
+
+
+
+
+
+
