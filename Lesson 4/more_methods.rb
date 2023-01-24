@@ -64,7 +64,4 @@
 #-------------Enumerable#each_with_object
 
 
-[1, 2, 3].each_with_object([]) do |num, array|
-  p array << num if num.odd?
-end
-# => [1, 3]
+testing 123
