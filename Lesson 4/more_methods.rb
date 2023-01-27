@@ -97,9 +97,38 @@
 
 
 #-------------Enumerable#include?
+#include? doesn't take a block, but it does require one argument.
+# It returns true if the argument exists in the collection and false if it doesn't.
+
+# [1, 2, 3].include?(1)
+# # => true
 
 
+#on a hash it checks Keys, not values
+
+# { a: "ant", b: "bear", c: "cat" }.include?("ant")
+# # => false
+
+# { a: "ant", b: "bear", c: "cat" }.include?(:a)
+# # => true
 
 
+#-------------Enumerable#partition
+# partition divides up elements in the current collection into two collections, 
+# depending on the block's return value. 
+
+# [1, 2, 3].partition do |num|
+#   num.odd?
+# end
+# # => [[1, 3], [2]]
+
+#Better way to write it
+
+# odd, even = [1, 2, 3].partition do |num|
+#   num.odd?
+# end
+
+# odd  # => [1, 3]
+# even # => [2]
 
 
