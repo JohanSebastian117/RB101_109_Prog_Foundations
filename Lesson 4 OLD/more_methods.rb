@@ -131,4 +131,11 @@
 # odd  # => [1, 3]
 # even # => [2]
 
+#hash 
+
+# long, short = { a: "ant", b: "bear", c: "cat" }.partition do |key, value|
+#   value.size > 3
+# end
+# # => [[[:b, "bear"]], [[:a, "ant"], [:c, "cat"]]]
+
 
