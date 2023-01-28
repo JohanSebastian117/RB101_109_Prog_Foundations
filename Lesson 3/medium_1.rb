@@ -1,9 +1,9 @@
-Question 1 --------------------------------------------------------------
+#Question 1 --------------------------------------------------------------
 
 10.times {|number| puts (" " * number) + "The Flinstones Rock!"}
 
 
-Question 2 --------------------------------------------------------------
+#Question 2 --------------------------------------------------------------
 
 puts "the value of 40 + 2 is " + (40 + 2)
 # No inversion of integer to string
@@ -13,7 +13,7 @@ puts "the value of 40 + 2 is " + (40 + 2)
 puts "the value of 40 + 2 is #{40 + 2}"
 puts "the value of 40 + 2 is " + (40 + 2).to_s
 
-Question 3 --------------------------------------------------------------
+#Question 3 --------------------------------------------------------------
 
 #Way to refactor better
 
@@ -21,7 +21,7 @@ def factors(number)
 	(1..number).select {|n| number % n == 0}
 end
 
-Question 5 --------------------------------------------------------------
+#Question 5 --------------------------------------------------------------
 
 #limit is outside of the scope 
 
@@ -39,7 +39,7 @@ result = fib(0, 1)
 puts "result is #{result}" 
 
 
-Question 6 --------------------------------------------------------------
+#Question 6 --------------------------------------------------------------
 
 #The result is 34. The "answer value" minus 8
 answer = 42
@@ -52,7 +52,7 @@ new_answer = mess_with_it(answer)
 
 p answer - 8
 
-Question 7 --------------------------------------------------------------
+#Question 7 --------------------------------------------------------------
 #the method completely changes the age, adding 42 years, and changing all genders to "other"
 
 munsters = {
@@ -72,7 +72,7 @@ end
 
 mess_with_demographics(munsters)
 
-Question 8 --------------------------------------------------------------
+#Question 8 --------------------------------------------------------------
 
 # This returns paper
 def rps(fist1, fist2)
@@ -87,7 +87,7 @@ end
 
 puts rps(rps(rps("rock", "paper"), rps("rock", "scissors")), "rock")
 
-Question 9 --------------------------------------------------------------
+#Question 9 --------------------------------------------------------------
 
 
 def foo(param = "no")

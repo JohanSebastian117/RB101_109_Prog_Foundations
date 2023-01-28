@@ -1,5 +1,5 @@
 
-Question 1 --------------------------------------------------------------
+#Question 1 --------------------------------------------------------------
 #greeting will be nil
 if false
   greeting = "hello world"
@@ -8,7 +8,7 @@ end
 greeting
 
 
-Question 2 --------------------------------------------------------------
+#Question 2 --------------------------------------------------------------
 
 
 greetings = { a: 'hi' }
@@ -18,7 +18,7 @@ informal_greeting << ' there'
 puts informal_greeting  #  => "hi there"
 puts greetings #{:a=>"hi there"}
 
-Question 3 --------------------------------------------------------------
+#Question 3 --------------------------------------------------------------
 
 # result will be = two, three, one
 def mess_with_vars(one, two, three)
@@ -40,7 +40,7 @@ puts "three is: #{three}"
 
 
 
-Question 4 --------------------------------------------------------------
+#Question 4 --------------------------------------------------------------
 
 
 def dot_separated_ip_address?(input_string)

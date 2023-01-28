@@ -1,15 +1,11 @@
-def string_lengths(sentence)
-  strings = sentence.split
-  lengths = []
-  counter = 1
-
-  until counter == strings.size do
-    word_length = strings[counter - 1].length
-    lengths.push(word_length)
-    counter += 1
-  end
-
-  lengths
+def name
+  "George"
 end
 
-p string_lengths("To be or not to be")
+name = "Lisa"
+
+def display_name
+  puts name
+end
+
+display_name
