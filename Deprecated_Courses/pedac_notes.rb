@@ -1,5 +1,10 @@
 =begin
 ------------------WHAT IS PEDAC?-----------------------
+P: Understanding the Problem
+E: Examples and test cases
+D: Data Structures
+A: Algorithms
+C: Implementing a solution in Code
 
 	P: Understanding the Problem
 		- Read the problem 
