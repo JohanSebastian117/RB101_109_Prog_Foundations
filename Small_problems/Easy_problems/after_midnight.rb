@@ -72,11 +72,6 @@ Here the delta minutes are d
 
 
 
-
-
-
-
-
 #--------------Part 2
 
 # Write two methods that each take a time of day in 24 hour format,
@@ -85,30 +80,35 @@ Here the delta minutes are d
 
 # You may not use ruby's Date and Time methods.
 
-HOURS_PER_DAY = 24
-MINUTES_PER_HOUR = 60
-MINUTES_PER_DAY = HOURS_PER_DAY * MINUTES_PER_HOUR
-
-def after_midnight(time)
-	hours, minutes = time.split(":").map(&:to_i)
-	(hours * MINUTES_PER_HOUR + minutes) % MINUTES_PER_DAY
-end
-
-def before_midnight(time)
-	delta_minutes = MINUTES_PER_DAY - after_midnight(time)
-	delta_minutes = 0 if delta_minutes == MINUTES_PER_DAY
-	delta_minutes
-end
 
 
+# HOURS_PER_DAY = 24
+# MINUTES_PER_HOUR = 60
+# MINUTES_PER_DAY = HOURS_PER_DAY * MINUTES_PER_HOUR
+
+# def after_midnight(time)
+# 	hours, minutes = time.split(":").map(&:to_i)
+# 	(hours * MINUTES_PER_HOUR + minutes) % MINUTES_PER_DAY
+# end
+
+# def before_midnight(time)
+# 	omega_time = MINUTES_PER_DAY - after_midnight(time)
+# 	omega_time = 0 if omega_time == MINUTES_PER_DAY
+# 	omega_time
+# end
 
 
-p after_midnight('00:00') == 0
-p before_midnight('00:00') == 0
-p after_midnight('12:34') == 754
-p before_midnight('12:34') == 686
-p after_midnight('24:00') == 0
-p before_midnight('24:00') == 0
+
+# p after_midnight('00:00') == 0
+# p before_midnight('00:00') == 0
+# p after_midnight('12:34') == 754
+# p before_midnight('12:34') == 686
+# p after_midnight('24:00') == 0
+# p before_midnight('24:00') == 0
+
+
+
+
 
 
 =begin
@@ -129,6 +129,13 @@ C: Implementing a solution in Code
 - input: We will be taking a string in time format 00:00
 - output: An integer representing minutes before or after midnight
 DRAFT OF ALGO
+	- We make some constants to represent values of time
+		- for AFTER MIDNIGHT we split the time string into hours and minutes, then make it into an integer
+			- hours, minutes = time.split(":").map(&:to_i)
+				- we make a FAILSAFE FOR 00:00/24:00 == (hours * MINUTES_PER_HOUR + minutes) % MINUTES_PER_DAY
+					- for BEFORE MIDNIGHT we take the output of AFTER MIDNIGHT and substract it from MINUTES PER DAY
+						- FAILSAFE for 00:00/24:00 == delta_minutes = 0 if delta_minutes == MINUTES_PER_DAY
+						END
 
 
 
@@ -137,10 +144,6 @@ DRAFT OF ALGO
 
 
 -------------- D
-
-
-
-
 
 
 =end
