@@ -24,11 +24,15 @@ Algo -
 	- We will take these words and change the first and last letter 
 		- Take the string and have it go through = 
 			- #split to seperate each characther into words
-				- #map to set up a BLOCK with #chars (now each word is an array made up of seperated letters)
-						-  place 2nd method here
+				- #map to set up a BLOCK with 
+					- #chars splits the array into its characthers (now each word is an array made up of seperated letters)
+						-  place 2ND METHOD HERE
+							- end the block
+								- Tak this ARRAY of words and #join them with then #join function into a string
+									- Voila
 
 2nd Method - swap_first_with_last
-- We take the first and last index of a string and switch them
+- We take the first[0] and last index[-1] of a string and switch them
 	- this method will be a component in the first method
 
 						- end the block
@@ -38,7 +42,6 @@ Algo -
 
 
 
-	- We will take this ARRAY of words and #join them with then #join function into a string
 	- We will post this STRING as the result
 
 =end
