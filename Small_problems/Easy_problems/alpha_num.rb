@@ -18,8 +18,9 @@ C: Implementing a solution in Code
 
 		The Value our method takes is [numbers]
 			1. We create a Key called [base] in which INTEGERS as STRINGS correspond to their word counterparts
-			2. Make value[ordered] = This value iterates over [numbers], then fetches the [base], turning number to string
-			3. Make a value[sorte_alpha] = Take the [ordered] value, iterate and 
+			2. Make a value[ordered] = This value iterates over [numbers], then fetches the [base], turning number to string
+			3. Make a value[sorted_alpha] = Take the [ordered] value, iterate and take the key to a string, then to integer
+			4. return the value [sorted_alphabetically]
 
 =end
 
@@ -49,3 +50,14 @@ p alphabetic_number_sort((0..19).to_a) == [
 ]
 
 p alphabetic_number_sort((0..7).to_a)
+
+#LAUNCH SCHOOL SOLUTION
+
+# NUMBER_WORDS = %w(zero one two three four
+#                   five six seven eight nine
+#                   ten eleven twelve thirteen fourteen
+#                   fifteen sixteen seventeen eighteen nineteen)
+
+# def alphabetic_number_sort(numbers)
+#   numbers.sort_by { |number| NUMBER_WORDS[number] }
+# end
