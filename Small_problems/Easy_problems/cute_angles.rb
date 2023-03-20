@@ -25,7 +25,7 @@ SECONDS_PER_MINUTE = 60
 SECONDS_PER_DEGREE = MINUTES_PER_DEGREE * SECONDS_PER_MINUTE
 
 def dms(degrees_float)
-	total_seconds = (degrees_float * SECONDS_PER_DEGREE).round #Find the seconds first. Take the Integer and times it by 120, then round
+	total_seconds = (degrees_float * SECONDS_PER_DEGREE).round #Find the Total Seconds first. Take the Integer and times it by 120, then round it
 	degrees, remaining_seconds = total_seconds.divmod(SECONDS_PER_DEGREE) #find DEGREES and REMAING SECS, by doing total_seconds.Divmod(120)
 	minutes, seconds = remaining_seconds.divmod(SECONDS_PER_MINUTE) #find MINUTES and SECONDS by doing remaining_seconds.Divmod(60)
 	p format(%(#{degrees}#{DEGREE}%02d'%02d"), minutes, seconds)#FORMAT all answers. Use DEGREE for the degree symbol // 
