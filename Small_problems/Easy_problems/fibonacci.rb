@@ -4,7 +4,20 @@ the first Fibonacci number that has the number of digits specified as an argumen
 (The first Fibonacci number has index 1.)
 
 
-had an odd time dealing with this problem and even the solution has bugs
+Set first two numbers to 1, per definition
+
+A big theme here lately have been to use my own definitions when building a problem
+We first make the firsta and second iterations of the Fibonacci 1 and 1
+
+then we make a LOOP and iterate by one index+=1
+Fibonacci sequence equals 1 + 1 so we define it as such
+We break if the fibonacci sequence equals the number_digits
+
+within the loop First = second and Second = fibonacci. 
+This makes the fibonacci sequence work
+
+leave the loop and place index outside.
+
 =end
 
 def find_fibonacci_index_by_length(number_digits)
