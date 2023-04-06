@@ -16,6 +16,12 @@ We append the result to rev
 we put rev at the end of the method
 
 profit
+
+or we can try:
+	which is paralell assignment
+
+    array[left_index], array[right_index] = array[right_index], array[left_index]
+
 =end
 
 # reversed array part 1
@@ -55,6 +61,8 @@ list == [] # true
 
 
 #reversed array part 2
+#Write a method that takes an Array, 
+#and returns a new Array with the elements of the original list in reverse order. Do not modify the original list.
 
 def reverse(list)
 	rev = []
