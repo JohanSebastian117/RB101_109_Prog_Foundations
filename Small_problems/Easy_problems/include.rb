@@ -5,7 +5,7 @@
 =end
 
 def include?(array, number)
-	array.find {|element| number } 
+	array.find {|element| return true if number == element}
 end
 
 p include?([1,2,3,4,5], 3)
