@@ -77,10 +77,18 @@
 
 ##--------Practice Problem 10
 
-[1, 2, 3].map do |num|
-  if num > 1
-    puts num
-  else
-    num
-  end
-end
+# [1, 2, 3].map do |num|
+#   if num > 1
+#     puts num
+#   else
+#     num
+#   end
+# end
+
+
+
+
+# How does the method treat the block's return value?
+# What is the return value of the method?
+# How can you use the Ruby docs to learn more about a method?
+# Is the method destructive?
