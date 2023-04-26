@@ -1,7 +1,10 @@
 # Find the duplicate value
 # (every other value occurs exactly once), 
 
-# There is a detect method we might use
+# Use #detect to return an element
+# Name the block duplicate, duh
+# Run the block and count how many duplicates there are
+# If the value duplicate is greater than 1 we will get that returned
 
 
 

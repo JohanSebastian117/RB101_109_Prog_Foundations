@@ -5,11 +5,13 @@ using a staggered capitalization scheme in which every other character is capita
 and the remaining characters are lowercase. Characters that are not letters should not be changed,
 but count as characters when switching between upper and lowercase.
 
-I could make an enumarator and capitalize every other letter
+I could make an enumarator and capitalize every other
 =end
 
 def staggered_case(string)
-	
+
+	characters = string.split.map do |char|
+
 end
 
 

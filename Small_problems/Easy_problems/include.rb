@@ -8,6 +8,8 @@ def include?(array, number)
 	array.find {|element| return true if number == element}
 end
 
+#!! means a double negative, this allows for a boolean value
+
 p include?([1,2,3,4,5], 3)
 p include?([1,2,3,4,5], 3) == true
 p include?([1,2,3,4,5], 6) == false

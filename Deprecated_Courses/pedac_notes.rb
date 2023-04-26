@@ -93,8 +93,8 @@ two integers, the third row three integers and so on. Given an integer represent
 the number of a particular row, return an integer representing the sum of all the 
 integers in that row.
 
-###P
-**Rules and Requirements***
+									###P
+									**Rules and Requirements***
 
 
 - Sequence of even integers
@@ -120,8 +120,8 @@ integers in that row.
 
 - How do we create the structure?
 
-###E
-***EXAMPLES***
+							###E
+							***EXAMPLES***
 
 
 row number 1 --> sum of integers in row: 2
@@ -132,8 +132,8 @@ row number 4 --> sum of integers in row: 68
 4, 6 --> 10
 14, 16, 18, 20 --> 68
 
-##D
-***DATA STRUCTURE***
+								##D
+								***DATA STRUCTURE***
 
 2
 4, 6
