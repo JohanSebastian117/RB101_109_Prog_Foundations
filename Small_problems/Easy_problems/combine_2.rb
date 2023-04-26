@@ -1,3 +1,6 @@
+#made a new array, this array takes array1 and uses #zip which adds both arrays together
+# we next use #flatten With no argument, flattens all levels:
+
 def interleave(array1, array2)
 	new_array = array1.zip(array2).flatten
 end

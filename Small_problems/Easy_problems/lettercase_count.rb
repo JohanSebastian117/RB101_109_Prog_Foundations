@@ -24,12 +24,14 @@ Write a method that takes a string, and then returns a hash that contains 3 entr
 =end
 
 def letter_case_count(string)
+
 	counts = {}
 	characters = string.chars
 
 	counts[:lowercase] = characters.count {|char| char =~ /[a-z]/}
 	counts[:uppercase] = characters.count {|char| char =~ /[A-Z]/}
-	counts[:neither] = characters.count {|char| char =~ /[^A-Za-z]/}
+	counts[:neither] = characters.count {|char| char =~ /[^a-zA-Z]/}
+
 	counts
 end
 

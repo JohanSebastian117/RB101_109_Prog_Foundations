@@ -7,12 +7,14 @@ You may assume that words are any sequence of non-blank characters.
 
 FIRST
 	Seperate every word with #split and run a block with #map
-	#capitalize every word in the array, #join it with spaces
+	within #map run a block for the letters/elements to  #capitalize on every word in the array, 
+	#join it with spaces (" ")
+	profit
 
 =end
 
 def word_cap(string)
-	string = string.split.map {|element| element.capitalize }.join(" ")
+	string = string.split.map {|word| word.capitalize}.join(" ")
 end
 
 

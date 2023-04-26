@@ -26,15 +26,16 @@ You may not use String#swapcase; write your own version of this method.
 
 def swapcase(string)
 	characters = string.chars.map do |char|
-		if char =~ /[A-Z]/
-			char.downcase
-		elsif char =~ /[a-z]/
+
+		if char =~ /[a-z]/
 			char.upcase
-		else
-			char
+		elsif char =~ /[A-Z]/
+			char.downcase
+		else char
 		end
 	end
 	characters.join
+
 end
 
 
